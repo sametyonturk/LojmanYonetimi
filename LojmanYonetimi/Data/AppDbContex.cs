@@ -9,7 +9,11 @@ namespace LojmanYonetimi.Data
 
         public DbSet<Kampus> Kampus => Set<Kampus>();
         public DbSet<OdaTipi> OdaTipis => Set<OdaTipi>();
-        public DbSet<ApplicationUser> ApplicationUser => Set<ApplicationUser>();
+
+        public DbSet<Unvan> Unvans => Set<Unvan>();
+        public DbSet<Bina> Binas => Set<Bina>();
+        public DbSet<Konut> Konuts => Set<Konut>();
+        public DbSet<ApplicationUser> ApplicationUsers => Set<ApplicationUser>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

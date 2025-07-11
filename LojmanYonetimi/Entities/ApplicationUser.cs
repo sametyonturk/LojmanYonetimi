@@ -10,6 +10,8 @@ namespace LojmanYonetimi.Entities
         public string KurumSicilNo { get; set; } = default!;
         public bool EngelliMi { get; set; }
         public MedeniDurumEnum MedeniDurum { get; set; }
+        public int UnvanId { get; set; }
+        public Unvan Unvan{ get; set; }
 
         // Diğer özel alanlar: CezaAlmisMi, SehitYakinlikDurumu vb.
     }
