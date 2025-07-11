@@ -11,5 +11,6 @@
         public decimal AkademikTesvikPuan { get; set; }
         public decimal MaksimumPuan { get; set; }
         public string Aciklama { get; set; }
+        public ICollection<KullaniciPuan> KullaniciPuans { get; set; } = new List<KullaniciPuan>();
     }
 }

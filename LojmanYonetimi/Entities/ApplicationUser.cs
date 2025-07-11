@@ -19,6 +19,7 @@ namespace LojmanYonetimi.Entities
      
 
         public ICollection<PersonelAkraba> PersonelAkrabas { get; set; } = new List<PersonelAkraba>();
+        public ICollection<KullaniciPuan> KullaniciPuans { get; set; } = new List<KullaniciPuan>();
         // Diğer özel alanlar: CezaAlmisMi, SehitYakinlikDurumu vb.
     }
 }
