@@ -17,6 +17,7 @@ namespace LojmanYonetimi.Data
         public DbSet<Birim> Birims => Set<Birim>();
         public DbSet<PersonelAkraba> PersonelAkrabas => Set<PersonelAkraba>();
         public DbSet<ApplicationUser> ApplicationUsers => Set<ApplicationUser>();
+        public DbSet<PuanKurali> PuanKuralis => Set<PuanKurali>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
