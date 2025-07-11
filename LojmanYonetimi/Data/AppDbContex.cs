@@ -15,6 +15,7 @@ namespace LojmanYonetimi.Data
         public DbSet<Konut> Konuts => Set<Konut>();
         public DbSet<Gorev> Gorevs => Set<Gorev>();
         public DbSet<Birim> Birims => Set<Birim>();
+        public DbSet<PersonelAkraba> PersonelAkrabas => Set<PersonelAkraba>();
         public DbSet<ApplicationUser> ApplicationUsers => Set<ApplicationUser>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

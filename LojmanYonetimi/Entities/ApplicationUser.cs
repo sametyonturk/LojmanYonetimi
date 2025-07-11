@@ -16,7 +16,9 @@ namespace LojmanYonetimi.Entities
         public int GorevId { get; set; }
         public int BirimId { get; set; }
         public Birim Birim { get; set; }
+     
 
+        public ICollection<PersonelAkraba> PersonelAkrabas { get; set; } = new List<PersonelAkraba>();
         // Diğer özel alanlar: CezaAlmisMi, SehitYakinlikDurumu vb.
     }
 }
