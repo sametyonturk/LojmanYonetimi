@@ -12,6 +12,8 @@ namespace LojmanYonetimi.Entities
         public MedeniDurumEnum MedeniDurum { get; set; }
         public int UnvanId { get; set; }
         public Unvan Unvan{ get; set; }
+        public Gorev Gorev { get; set; }
+        public int GorevId { get; set; }
 
         // Diğer özel alanlar: CezaAlmisMi, SehitYakinlikDurumu vb.
     }

@@ -13,6 +13,7 @@ namespace LojmanYonetimi.Data
         public DbSet<Unvan> Unvans => Set<Unvan>();
         public DbSet<Bina> Binas => Set<Bina>();
         public DbSet<Konut> Konuts => Set<Konut>();
+        public DbSet<Gorev> Gorevs => Set<Gorev>();
         public DbSet<ApplicationUser> ApplicationUsers => Set<ApplicationUser>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
