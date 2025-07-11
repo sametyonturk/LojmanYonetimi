@@ -14,6 +14,8 @@ namespace LojmanYonetimi.Entities
         public Unvan Unvan{ get; set; }
         public Gorev Gorev { get; set; }
         public int GorevId { get; set; }
+        public int BirimId { get; set; }
+        public Birim Birim { get; set; }
 
         // Diğer özel alanlar: CezaAlmisMi, SehitYakinlikDurumu vb.
     }
