@@ -5,7 +5,7 @@ namespace LojmanYonetimi.Enums
     public enum KonutDurumEnum
     {
         [Display(Name = "Boş")]
-        Boş = 5,
+        Bos = 5,
 
         [Display(Name = "Dolu")]
         Dolu = 10,
