@@ -4,6 +4,7 @@ using LojmanYonetimi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LojmanYonetimi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250717051445_mgr14")]
+    partial class mgr14
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -238,62 +241,6 @@ namespace LojmanYonetimi.Migrations
                     b.HasIndex("KampusId");
 
                     b.ToTable("Binas", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Aciklama = "Açıklama A",
-                            Aktif = true,
-                            AsansorVarmi = false,
-                            BinaAd = "A Blok",
-                            BinaNo = "A1",
-                            CatiVarmi = false,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            EngelliGirisiVarmi = false,
-                            KampusId = 1,
-                            OtoparkVarmi = false,
-                            Silinmismi = false
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Aciklama = "Açıklama B",
-                            Aktif = true,
-                            AsansorVarmi = false,
-                            BinaAd = "B Blok",
-                            BinaNo = "B1",
-                            CatiVarmi = false,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            EngelliGirisiVarmi = false,
-                            KampusId = 1,
-                            OtoparkVarmi = false,
-                            Silinmismi = false
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Aciklama = "Online açıklama",
-                            Aktif = true,
-                            AsansorVarmi = false,
-                            BinaAd = "Online Ofis",
-                            BinaNo = "C1",
-                            CatiVarmi = false,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            EngelliGirisiVarmi = false,
-                            KampusId = 2,
-                            OtoparkVarmi = false,
-                            Silinmismi = false
-                        });
                 });
 
             modelBuilder.Entity("LojmanYonetimi.Entities.Birim", b =>
@@ -338,19 +285,6 @@ namespace LojmanYonetimi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Birims", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Aktif = true,
-                            BirimAd = "Bilgi İşlem",
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            Silinmismi = false
-                        });
                 });
 
             modelBuilder.Entity("LojmanYonetimi.Entities.Gorev", b =>
@@ -405,21 +339,6 @@ namespace LojmanYonetimi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Gorevs", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Aktif = true,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            GorevAd = "Memur",
-                            Puan = 0,
-                            Silinmismi = false,
-                            Sira = 0
-                        });
                 });
 
             modelBuilder.Entity("LojmanYonetimi.Entities.Kampus", b =>
@@ -543,28 +462,6 @@ namespace LojmanYonetimi.Migrations
                     b.HasIndex("OdaTipiId");
 
                     b.ToTable("Konuts", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Aktif = true,
-                            BinaId = 1,
-                            DaireAd = "101 No'lu Daire",
-                            DaireNo = 101,
-                            DaireTuruEnum = 0,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            Esyalimi = false,
-                            IsitmaTuruEnum = 0,
-                            KatEnum = 1,
-                            KonutDurumEnum = 5,
-                            MetreKare = 0,
-                            OdaTipiId = 1,
-                            Silinmismi = false
-                        });
                 });
 
             modelBuilder.Entity("LojmanYonetimi.Entities.KullaniciPuan", b =>
@@ -617,21 +514,6 @@ namespace LojmanYonetimi.Migrations
                     b.HasIndex("PuanKuraliId");
 
                     b.ToTable("KullaniciPuans", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Aktif = true,
-                            ApplicationUserId = 1,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            Puan = 10m,
-                            PuanKuraliId = 1,
-                            Silinmismi = false
-                        });
                 });
 
             modelBuilder.Entity("LojmanYonetimi.Entities.OdaTipi", b =>
@@ -683,32 +565,6 @@ namespace LojmanYonetimi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("OdaTipis", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Aktif = true,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            OdaAd = "1+1",
-                            OdaSayisi = 0,
-                            Silinmismi = false
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Aktif = true,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            OdaAd = "2+1",
-                            OdaSayisi = 0,
-                            Silinmismi = false
-                        });
                 });
 
             modelBuilder.Entity("LojmanYonetimi.Entities.PersonelAkraba", b =>
@@ -841,27 +697,6 @@ namespace LojmanYonetimi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("PuanKuralis", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Aciklama = "Kıdeme göre verilen puan",
-                            Ad = "Kıdem Puanı",
-                            AkademikTesvikPuan = 0m,
-                            Aktif = true,
-                            AylKatSayi = 0m,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            KisiBasiKatSayisi = 0m,
-                            Kod = "PK001",
-                            MaksimumPuan = 100m,
-                            SabitPuan = 10m,
-                            Silinmismi = false,
-                            YilKatSayi = 0m
-                        });
                 });
 
             modelBuilder.Entity("LojmanYonetimi.Entities.Unvan", b =>
@@ -916,21 +751,6 @@ namespace LojmanYonetimi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Unvans", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Aktif = true,
-                            DuzenlemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Duzenleyen = "system",
-                            EklemeTarihi = new DateTime(2025, 7, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            Ekleyen = "system",
-                            Puan = 0,
-                            Silinmismi = false,
-                            Sira = 0,
-                            UnvanAd = "Uzman"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

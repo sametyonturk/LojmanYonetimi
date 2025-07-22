@@ -19,6 +19,8 @@ namespace LojmanYonetimi.Data
         public DbSet<ApplicationUser> ApplicationUsers => Set<ApplicationUser>();
         public DbSet<PuanKurali> PuanKuralis => Set<PuanKurali>();
         public DbSet<KullaniciPuan> KullaniciPuans => Set<KullaniciPuan>();
+        public DbSet<TercihEdilenKampus> TercihEdilenKampus => Set<TercihEdilenKampus>();
+        public DbSet<TercihEdilenKonut> TercihEdilenKonuts => Set<TercihEdilenKonut>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,8 +28,9 @@ namespace LojmanYonetimi.Data
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
 
-
+            DataSeeder.Seed(modelBuilder); // Seed verilerini ekle
         }
+      
     }
 
 }
