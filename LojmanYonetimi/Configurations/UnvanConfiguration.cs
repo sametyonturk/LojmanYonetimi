@@ -35,11 +35,7 @@ namespace LojmanYonetimi.Configurations
             builder.Property(p => p.Silinmismi).HasDefaultValue(false);
 
 
-            // Bire-çok ilişki
-            builder.HasMany(k => k.ApplicationUsers)
-                .WithOne(b => b.Unvan)
-                .HasForeignKey(b => b.UnvanId)
-                .OnDelete(DeleteBehavior.Cascade);
+            
 
             builder.ToTable("Unvans");
         }

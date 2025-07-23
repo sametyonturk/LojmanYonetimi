@@ -8,10 +8,17 @@ namespace LojmanYonetimi.Configurations
     {
         public void Configure(EntityTypeBuilder<Birim> builder)
         {
-            builder.Property(k => k.BirimAd)
-                 .HasMaxLength(200)
-                 .IsRequired();
-           
+            builder.HasKey(b => b.Id);
+
+            builder.Property(b => b.BirimAd)
+                .IsRequired()
+                .HasMaxLength(150);
+
+            builder.HasOne(b => b.UstBirim)
+                .WithMany(b => b.AltBirimler)
+                .HasForeignKey(b => b.UstBirimId)
+                .OnDelete(DeleteBehavior.Restrict); // önemli!
+
 
             // BaseEntity alanları için de istersen burada yapılandırma yapılabilir.
             builder.Property(p => p.Ekleyen)
