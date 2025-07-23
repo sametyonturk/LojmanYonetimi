@@ -21,6 +21,7 @@ namespace LojmanYonetimi.Data
         public DbSet<KullaniciPuan> KullaniciPuans => Set<KullaniciPuan>();
         public DbSet<TercihEdilenKampus> TercihEdilenKampus => Set<TercihEdilenKampus>();
         public DbSet<TercihEdilenKonut> TercihEdilenKonuts => Set<TercihEdilenKonut>();
+        public DbSet<Basvuru> Basvurus => Set<Basvuru>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
