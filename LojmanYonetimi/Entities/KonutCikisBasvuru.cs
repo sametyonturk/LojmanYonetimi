@@ -2,7 +2,7 @@
 
 namespace LojmanYonetimi.Entities
 {
-    public class KonutCikisBasvuru : BaseEntitiy
+    public class KonutCikisBasvuru : BaseEntity
     {
         public int TahsisId { get; set; }
         public Tahsis Tahsis { get; set; }

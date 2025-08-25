@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class PersonelAkraba : BaseEntitiy
+    public class PersonelAkraba : BaseEntity
     {
         public string KonukAdSoyad { get; set; }
         public int ApplicationUserId { get; set; }

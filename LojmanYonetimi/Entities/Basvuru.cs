@@ -2,7 +2,7 @@
 
 namespace LojmanYonetimi.Entities
 {
-    public class Basvuru : BaseEntitiy
+    public class Basvuru : BaseEntity
     {
         public int ApplicationUserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; } = default!;

@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class Birim : BaseEntitiy
+    public class Birim : BaseEntity
     {
         public string BirimAd { get; set; }
 

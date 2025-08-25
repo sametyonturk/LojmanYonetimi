@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class KullaniciPuan : BaseEntitiy
+    public class KullaniciPuan : BaseEntity
     {
         public int ApplicationUserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }

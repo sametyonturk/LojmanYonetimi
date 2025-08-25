@@ -2,7 +2,7 @@
 
 namespace LojmanYonetimi.Entities
 {
-    public class KomisyonOnay : BaseEntitiy
+    public class KomisyonOnay : BaseEntity
     {
         public int KonutCikisBasvuruId { get; set; }
         public KonutCikisBasvuru KonutCikisBasvuru { get; set; }

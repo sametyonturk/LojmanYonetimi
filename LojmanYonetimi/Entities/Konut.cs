@@ -2,7 +2,7 @@
 
 namespace LojmanYonetimi.Entities
 {
-    public class Konut : BaseEntitiy
+    public class Konut : BaseEntity
     {
         public int BinaId { get; set; }
         public Bina Bina { get; set; }

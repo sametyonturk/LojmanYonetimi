@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class Bina : BaseEntitiy
+    public class Bina : BaseEntity
     {
         public int KampusId { get; set; }
         public Kampus Kampus { get; set; } = default!;

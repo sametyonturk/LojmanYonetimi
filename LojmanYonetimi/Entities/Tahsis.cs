@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class Tahsis : BaseEntitiy
+    public class Tahsis : BaseEntity
     {
         public int KonutId { get; set; }
         public int BasvuruId { get; set; }

@@ -2,7 +2,7 @@
 
 namespace LojmanYonetimi.Entities
 {
-    public class OdaTipi : BaseEntitiy
+    public class OdaTipi : BaseEntity
     {
         public int OdaSayisi { get; set; }
         public string OdaAd { get; set; } = default!;

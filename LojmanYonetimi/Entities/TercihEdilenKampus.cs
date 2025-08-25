@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class TercihEdilenKampus : BaseEntitiy
+    public class TercihEdilenKampus : BaseEntity
 
     {
         public int BasvuruId { get; set; }

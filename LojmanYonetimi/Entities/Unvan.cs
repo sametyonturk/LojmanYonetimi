@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class Unvan : BaseEntitiy
+    public class Unvan : BaseEntity
     {
         public string UnvanAd { get; set; }
         public string UnvanKisaAd { get; set; }

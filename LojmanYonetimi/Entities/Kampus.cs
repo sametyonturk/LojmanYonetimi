@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class Kampus : BaseEntitiy
+    public class Kampus : BaseEntity
     {
         
         public string KampusAd { get; set; } = default!;

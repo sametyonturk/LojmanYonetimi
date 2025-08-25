@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class Gorev : BaseEntitiy
+    public class Gorev : BaseEntity
     {
         public string GorevAd { get; set; }
         public string GorevKisaAd { get; set; }

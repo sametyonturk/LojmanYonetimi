@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class PuanKurali : BaseEntitiy
+    public class PuanKurali : BaseEntity
     {
         public string Kod { get; set; }
         public string Ad { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class CikisEksikKaydi : BaseEntitiy
+    public class CikisEksikKaydi : BaseEntity
     {
         public int KonutCikisBasvuruId { get; set; }
         public KonutCikisBasvuru KonutCikisBasvuru { get; set; }

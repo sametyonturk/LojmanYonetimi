@@ -1,6 +1,6 @@
 ﻿namespace LojmanYonetimi.Entities
 {
-    public class BaseEntitiy
+    public class BaseEntity
     {
         public int Id { get; set; }
         public string Ekleyen { get; set; }
