@@ -22,6 +22,18 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Akademik()
+    {
+        return View(); // Views/Home/Akademik.cshtml
+    }
+    public IActionResult Idari()
+    {
+        return View(); // Views/Home/Akademik.cshtml
+    }
+    public IActionResult Cikis()
+    {
+        return View(); // Views/Home/Akademik.cshtml
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

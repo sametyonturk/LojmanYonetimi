@@ -1,9 +1,15 @@
 ﻿using LojmanYonetimi.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
+using AppUser = LojmanYonetimi.Entities.ApplicationUser;
+using AppRole = LojmanYonetimi.Entities.ApplicationRole;
+
+
 namespace LojmanYonetimi.Data
+  
 {
-    public class AppDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, int>
+    public class AppDbContext : IdentityDbContext<AppUser, AppRole, int>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
